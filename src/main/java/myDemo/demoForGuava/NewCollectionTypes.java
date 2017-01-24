@@ -62,6 +62,31 @@ public class NewCollectionTypes {
         System.out.println();
 
         // size()
-        System.out.println(multiset.size());                                                                            // print 10
+        int size = multiset.size();
+        System.out.println(size);                                                                                       // print 10
+
+        // count(E)
+        int count = multiset.count("d");
+        System.out.println(count);                                                                                      // print 4
+
+        // entrySet()
+        for (Multiset.Entry<String> e : multiset.entrySet()) {                                                          // print:
+            System.out.println(e);
+        }
+        // above oparation print:
+        // a
+        // b x 2
+        // c x 3
+        // d x 4
+
+        // elementSet()
+        for (String s : multiset.elementSet()) {
+            System.out.println(s);
+        }
+        // above operation print:
+        // a
+        // b
+        // c
+        // d
     }
 }
