@@ -88,5 +88,15 @@ public class NewCollectionTypes {
         // b
         // c
         // d
+
+        // remove(E, int)
+        multiset.remove("d");
+        System.out.println(multiset.count("d"));                                                                        // print 3
+        multiset.remove("d", 2);
+        System.out.println(multiset.count("d"));                                                                        // print 1
+
+        // setCount(E, int)
+        multiset.setCount("d", 4);
+        System.out.println(multiset.count("d"));                                                                        // print 4
     }
 }
