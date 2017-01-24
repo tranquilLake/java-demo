@@ -98,5 +98,18 @@ public class NewCollectionTypes {
         // setCount(E, int)
         multiset.setCount("d", 4);
         System.out.println(multiset.count("d"));                                                                        // print 4
+
+        // Multiset is not a map
+
+        // A Multiset<E> has elements with positive counts only. No element can have negative counts,
+        // and values with count 0 are considered to not be in the multiset. They do not appear in the elementSet() or entrySet() view.
+
+        // Multiset size function returns the size of collection, which is equal to the sum of the counts of all elements.
+        // For the number of distinct element, use elementSet().size().
+
+        // Multiset iterator function iterates over each occurence of each element, so the length of iteration is equal to multiset.size().
+
+        // Multiset count function for an element not in the multiset always return 0;
+
     }
 }
