@@ -99,6 +99,7 @@ public class NewCollectionTypes {
         multiset.setCount("d", 4);
         System.out.println(multiset.count("d"));                                                                        // print 4
 
+        /* *************************************************************************************************************** */
         // Multiset is not a map
 
         // A Multiset<E> has elements with positive counts only. No element can have negative counts,
@@ -110,6 +111,19 @@ public class NewCollectionTypes {
         // Multiset iterator function iterates over each occurence of each element, so the length of iteration is equal to multiset.size().
 
         // Multiset count function for an element not in the multiset always return 0;
+        /* *************************************************************************************************************** */
+
+
+        /* *************************************************************************************************************** */
+        // Multiset Implementations
+
+        // Map              Corresponding Multiset              Support null
+        // HashMap          HashMultiset                        Yes
+        // TreeMap          TreeMultiset                        Yes
+        // LinkedHashMap    LinkedHashMultiset                  Yes
+        // ConcurrentHashMap    ConcurrentHashMultiset          No
+        // ImmutableMap     ImmutableMultiset                   Yes
+        /* *************************************************************************************************************** */
 
     }
 }
